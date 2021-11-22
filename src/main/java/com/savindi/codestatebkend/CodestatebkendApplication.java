@@ -1,10 +1,8 @@
 package com.savindi.codestatebkend;
 
-//import lombok.extern.slf4j.Slf4j;
+import lombok.extern.slf4j.Slf4j;
 import org.json.JSONArray;
 import org.json.JSONObject;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.http.MediaType;
@@ -13,12 +11,12 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
 
-//@Slf4j
+@Slf4j
 @SpringBootApplication
 @RestController
 public class CodestatebkendApplication {
 
-    private static Logger log = LoggerFactory.getLogger(CodestatebkendApplication.class);
+//    private static Logger log = LoggerFactory.getLogger(CodestatebkendApplication.class);
 
     final static String serverUrl1 = "https://gist.githubusercontent.com/skalva404/482f7f3c8ee5dfea0fb646b8d566afc5/raw/27fbc94c952c2116e4a5d0c8dc90f845f2e4d8ed/states_hash.json";
     final static String serverUrl2 = "https://gist.githubusercontent.com/skalva404/ed93e3aafd35b0564525c3546c58d507/raw/f335dfcdce2d55f550b90371126a05bb25de4092/states_title_case.json";
